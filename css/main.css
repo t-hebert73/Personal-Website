@@ -74,7 +74,7 @@ textarea {
 
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
-    background-color:#a60000;
+    background-color:#014D57;
 }
 
 .wrapper {
@@ -101,7 +101,7 @@ body {
 .header-container,
 .footer-container,
 .main aside {
-    background: #ff0000;
+    background: black;
 }
 
 .title {
@@ -151,12 +151,15 @@ nav a:hover {
 
 .main aside {
     color: white;
-    padding: 0px 5% 10px;
+    padding: 0px 5% 0px;
+    margin-bottom:60px;
 }
 
 .footer-container footer {
     color: white;
     padding: 20px 0;
+    min-height:60px;
+    
 }
 
 /* ===============
@@ -171,6 +174,61 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
+.more-projects{
+	display:block;
+	background-color:#3E94D1;
+	margin-left:70px;
+	height:50px;
+	width:200px;
+	text-align: center;
+	line-height:50px;
+	text-decoration:none;
+	color:white;
+	font-weight:bold;
+}
+
+#aside-more-projects a:hover{
+	background-color:#03406A;
+	}
+
+#aside-more-projects{
+	background:none !important;
+}
+
+/*style the footer text and icons*/
+.footer-list{
+	display:inline;
+	list-style-type:none;
+	
+	}
+
+.footer-list li{
+	float:left;
+	margin-right:200px;
+}
+
+/*styling for projects and services page list*/
+
+.information-list {
+	list-style-type: none;
+}
+
+.information-list li img{
+	float:left;
+	margin-right:15px;
+}
+
+.information-list li{
+	height:158px;
+}
+
+.information-list li h2{
+	padding-top:15px;
+}
+
+.information-list li:hover{
+	background-color:#599100;
+}
 
 
 
@@ -437,9 +495,52 @@ nav a:hover {
 	position:relative;
 	z-index:0;
 	width:739px;
-	height:320px;
+	height:326px;
 	top:-327px;
 	left:-74px;
+}
+
+.slider{
+	float:right;
+	list-style-type:none;
+	padding:0px;
+	margin:0px;
+}
+
+.slider li{
+	float:right;
+	width:50%;
+}
+
+
+
+
+/*style the more info button on slides*/
+.more-info{
+	background:#A8F000;
+	display:inline-block;
+	position:relative;
+	top:-50px;
+	width:170px;
+	height:40px;
+	margin-left:300px;
+	text-decoration:none;
+	text-align:center;
+	line-height:40px;
+	color:white;
+}
+
+/*change color on hover for more info button on slides*/
+.slide a:hover{
+	background:#599100;
+	font-weight:bold;
+}
+
+.slider-image {
+	margin-left:30px;
+	border-style:groove;
+	border-width:5px;
+	border-color:#A8F000;
 }
 
 /*
