@@ -1,5 +1,10 @@
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   
+   Filename: main.css
+   Author name: Trevor Hebert
+   Website name: Trevor's Personal Portfolio
+   File description: The main css page.
    ========================================================================== */
 
 html,
@@ -496,7 +501,7 @@ nav a:hover {
 	z-index:0;
 	width:739px;
 	height:326px;
-	top:-327px;
+	top:-328px;
 	left:-74px;
 }
 
@@ -542,6 +547,8 @@ nav a:hover {
 	border-width:5px;
 	border-color:#A8F000;
 }
+
+
 
 /*
 	Pagination

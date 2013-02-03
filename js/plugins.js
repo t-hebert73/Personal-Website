@@ -1,3 +1,8 @@
+//Filename: plugins.js
+//Authors name: Trevor Hebert
+//Website name: Trevor's Personal Portfolio
+//File description: Plugins js file.
+
 // Avoid `console` errors in browsers that lack a console.
 (function() {
     var method;
@@ -23,6 +28,8 @@
 
 // Place any jQuery/helper plugins in here.
 
+
+//this function handles the settings of the front page slider
 $(function(){
 			// Set starting slide to 1
 			var startSlide = 1;
