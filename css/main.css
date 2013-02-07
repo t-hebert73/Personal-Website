@@ -38,7 +38,7 @@ background-color:#03406A;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: gainsboro;
     text-shadow: none;
 }
 
@@ -78,8 +78,14 @@ textarea {
    ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
-    background-color:#014D57;
+    font: 14px/26px Helvetica, Helvetica Neue, Arial;
+    
+    background:url("../img/containerbackground.png") top left repeat-x;
+   
+}
+
+h1, h2, h3, h4, h5{
+	text-shadow:-5px -2px 12px black;
 }
 
 .wrapper {
@@ -100,7 +106,7 @@ body {
  }
 
 .main-container{
-	margin-top:20px;
+	min-height:545px;
 }
 
 .header-container,
@@ -112,6 +118,8 @@ body {
 .title {
     color: white;
 }
+
+
 
 /* ==============
     MOBILE: Menu
@@ -181,7 +189,7 @@ nav a:hover {
 
 .more-projects{
 	display:block;
-	background-color:#3E94D1;
+	background-color:#03406A;
 	margin-left:70px;
 	height:50px;
 	width:200px;
@@ -190,10 +198,11 @@ nav a:hover {
 	text-decoration:none;
 	color:white;
 	font-weight:bold;
+	border:black 1px solid;
 }
 
 #aside-more-projects a:hover{
-	background-color:#03406A;
+	background-color:#646464;
 	}
 
 #aside-more-projects{
@@ -232,7 +241,7 @@ nav a:hover {
 }
 
 .information-list li:hover{
-	background-color:#599100;
+	
 }
 
 
@@ -363,7 +372,11 @@ nav a:hover {
     .wrapper {
         width: 1026px; /* 1140px - 10% for margins */
         margin: 0 auto;
-    }
+  	}
+  	
+  	.content{
+  		
+  	}
 }
 
 /* ==========================================================================
@@ -517,12 +530,15 @@ nav a:hover {
 	width:50%;
 }
 
+ .slider-container {
+	height:420px; /*fixes extra space at bottom of slider*/
+ }
 
 
 
 /*style the more info button on slides*/
 .more-info{
-	background:#A8F000;
+	background:#03406A;
 	display:inline-block;
 	position:relative;
 	top:-50px;
@@ -533,19 +549,29 @@ nav a:hover {
 	text-align:center;
 	line-height:40px;
 	color:white;
+	font-weight:bold;
+	border:black 1px solid;
 }
 
 /*change color on hover for more info button on slides*/
 .slide a:hover{
-	background:#599100;
-	font-weight:bold;
+	background:#646464;
+	
+}
+
+.slide h1{
+	text-shadow:-5px -2px 12px black;
+}
+
+.slide strong{
+	text-shadow:-5px -2px 12px black;
 }
 
 .slider-image {
 	margin-left:30px;
 	border-style:groove;
 	border-width:5px;
-	border-color:#A8F000;
+	border-color:black;
 }
 
 
