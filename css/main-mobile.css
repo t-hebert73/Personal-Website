@@ -1,0 +1,56 @@
+/* ==========================================================================
+   
+   
+   Filename: main-mobile.css
+   Author name: Trevor Hebert
+   Website name: Trevor's Personal Portfolio
+   File description: The main css page for the mobile version.
+   ========================================================================== */
+
+p, h1, h2, h3, h4, h5, h6{
+	font-family: 'Enriqueta', serif;
+}
+
+
+h1 {
+  font-size:36px;
+  margin-bottom:10px;
+  text-align:center;
+}
+h2 {
+  font-size:18px;
+  margin:15px;
+  font-weight:bold;
+  text-align:center;
+}
+
+
+
+p {
+	margin-bottom:15px;
+	text-align:center;
+}
+
+img{
+	
+	padding:0px;
+	vertical-align:bottom;
+	width:inherit;
+	height:inherit;
+}
+
+.imageofme{
+	text-align: center;
+    margin-left:0 auto;
+    margin-right:0 auto;
+   
+ 
+}
+
+.listcaption {
+	font-size:18px;
+	margin:5px;
+	font-weight:bold;
+	font-style:italic;
+
+}

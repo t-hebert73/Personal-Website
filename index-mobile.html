@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<!--
+Filename: index-mobile.html
+Author name: Trevor Hebert
+Website name: Trevor's Personal Portfolio
+File description: This is the mobile version of my personal website.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>
+        	Trevor Hebert's Personal Website
+        </title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+        <link rel="stylesheet" href="themes/TrevorsPersonalWebsite.css" />
+        <link href='http://fonts.googleapis.com/css?family=Enriqueta:400,700' rel='stylesheet' type='text/css'>
+        <!--swipe.js style sheet-->
+        <link href='css/style.css' rel='stylesheet'/>
+        <!-- user generated style sheet -->
+        <link href='css/main-mobile.css' rel='stylesheet'/>
+        
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js">
+        </script>
+        <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js">
+        </script>
+        
+        
+       
+        <!-- User-generated js -->
+        <script>
+            try {
+
+    $(function() {
+
+    });
+
+  } catch (error) {
+    console.error("Your javascript has an error: " + error);
+  }
+        </script>
+    </head>
+    <body>
+        <!-- Home 
+        	//////////////////////////////////////////////////
+        	//////////////////////////////////////////////////
+        	//////////////////////////////////////////////////
+        	//////////////////////////////////////////////////-->
+        <div data-role="page" id="home" data-theme="a">
+            
+            <div data-role="content">
+            	
+            		<h1>Welcome to my Personal Portfolio</h1>
+            		<h2>Where Innovation and Dedication Meet</h2>
+            		<p>I strive to make the best, most sohphisticted Web development and Application solutions to meet industry needs.</p>
+            		 
+            		<h2>Past Projects</h2> 
+            	
+            	<div id='slider' class='swipe' >
+            		<ul>
+            			<li class='image' style="display:block;"><a href="#projects"><img src="img/SpaceattackMobile.png"  alt="Space Attack" title="Space Attack" /></a><p class="listcaption">Space Attack!</p></li>
+            			<li class='image' style="display:none;"><a href="#projects"><img src="img/Anti-FrogRMobile.png" alt="Anti-FrogR" title="Anti-FrogR" /></a><p class="listcaption">Anti-FrogR! </p></li>
+            			<li class='image' style="display:none;"><a href="#projects"><img src="img/slotmachineMobile.png" alt="Slot Machine Madness" title="Anti-FrogR" /></a><p class="listcaption">Slot Machine Madness! </p></li>
+            		</ul>
+            		
+            		<!-- handles the photo swipe feature -->
+            		<script src='js/swipe.js'></script>
+            		<script src='js/plugins-mobile.js'></script>
+					
+            		
+            	</div>	
+            		
+            </div>
+            
+            <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#home" data-transition="pop" data-theme="" data-icon="home" class="ui-btn-active ui-state-persist">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#aboutme" data-transition="pop" data-theme="" data-icon="info">
+                                About Me
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#projects" data-transition="pop" data-theme="" data-icon="star">
+                                Projects
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            <div data-role="navbar" data-iconpos="left">
+                    <ul>
+                        <li>
+                            <a href="#services" data-transition="pop" data-theme="" data-icon="check">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contactme" data-transition="pop" data-theme="" data-icon="gear">
+                                Contact Me
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+            <div data-role="footer" data-theme="a">
+                <h3>Copyright &copy; 2013 - All Rights Reserved</h3>
+                
+            </div>    
+            
+            <div data-role="footer2" data-theme="a">
+            	
+            	<img src="img/LogoMobile.jpg"  />
+            </div>
+        </div
+        
+        
+        
+        <!-- About Me 
+        	//////////////////////////////////////////////////
+        	//////////////////////////////////////////////////
+        	//////////////////////////////////////////////////
+        	//////////////////////////////////////////////////-->
+        <div data-role="page" id="aboutme" data-theme="a">
+            
+            <div data-theme="a" data-role="header">
+                <h3>
+                    About Me
+                </h3>
+                
+            </div>
+            
+            <div data-role="content">
+            	<div>
+            		
+            		
+            		<div class="imageofme">
+            		<img src="img/me.jpg" title="Hebert Software" alt="Hebert Software"  />
+            		</div>
+            		<p>I am a student at Georgian College enrolled in my third year of the Computer Programmer Analyst course. I have been using computers ever since I can remember and have starting doing programming in 2009.</p>
+            		<h2>Dedicated and Hardworking</h2>
+            		<p>To develop top notch programs you must take a dedicated approach and put in the necessary time and effort to create masterpieces. I will work around the clock to create what you need.</p> 
+            		</div>
+            </div>
+            
+            <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#home" data-transition="pop" data-theme="" data-icon="home">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a data-rel="back" data-transition="pop" data-theme="" data-icon="info" class="ui-btn-active ui-state-persist">
+                                Back
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#projects" data-transition="pop" data-theme="" data-icon="star">
+                                Projects
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-role="navbar" data-iconpos="left">
+                    <ul>
+                        <li>
+                            <a href="#services" data-transition="pop" data-theme="" data-icon="check">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contactme" data-transition="pop" data-theme="" data-icon="gear">
+                                Contact Me
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            
+             <div data-role="footer" data-theme="a">
+                <h3>Copyright &copy; 2013 - All Rights Reserved</h3>
+                
+            </div>    
+            
+            <div data-role="footer2" data-theme="a">
+            	
+            	<img src="img/LogoMobile.jpg"  />
+            </div>
+        </div
+        
+        <!-- Projects 
+        	//////////////////////////////////////////////////
+        	//////////////////////////////////////////////////
+        	//////////////////////////////////////////////////
+        	//////////////////////////////////////////////////-->
+        <div data-role="page" id="projects" data-theme="a">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Past Projects
+                </h3>
+                
+            </div>
+            <div data-role="content">
+            	<div data-role="collapsible">
+            		<h3>Space Attack!</h3>
+            		<img src="img/SpaceattackMobile.png" />
+            		<p>A Fast-paced spaceship shooter game with 4 different difficulties, Easy, Medium, Hard, and Insane. Fly through space dodging asteroids, enemy ships, and many other things while trying to survive! </p>
+            	</div>
+            	<div data-role="collapsible">
+            		<h3>Anti-FrogR!</h3>
+            		<img src="img/Anti-FrogRMobile.png" />
+            		<p>Take control of the wheel and run down those poisonious frogs. Drive down the highway exterminating all the frogs you see! </p>
+            	</div>
+            	<div data-role="collapsible">
+            		<h3>Slot Machine Madness!</h3>
+            		<img src="img/slotmachineMobile.png" />
+            		<p>Take Your Chances and try to win on the slot machine! Do you think you can win big?! </p>
+            	</div>
+            	
+            </div>
+            
+            <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#home" data-transition="pop" data-theme="" data-icon="home" >
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#aboutme" data-transition="pop" data-theme="" data-icon="info">
+                                About Me
+                            </a>
+                        </li>
+                        <li>
+                            <a data-rel="back" data-transition="pop" data-theme="" data-icon="star" class="ui-btn-active ui-state-persist">
+                                Back
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-role="navbar" data-iconpos="left">
+                    <ul>
+                        <li>
+                            <a href="#services" data-transition="pop" data-theme="" data-icon="check">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contactme" data-transition="pop" data-theme="" data-icon="gear">
+                                Contact Me
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            
+             <div data-role="footer" data-theme="a">
+                <h3>Copyright &copy; 2013 - All Rights Reserved</h3>
+                
+            </div>    
+            
+            <div data-role="footer2" data-theme="a">
+            	
+            	<img src="img/LogoMobile.jpg"  />
+            </div>
+        </div
+
+		<!-- Services
+        	//////////////////////////////////////////////////
+        	//////////////////////////////////////////////////
+        	//////////////////////////////////////////////////
+        	//////////////////////////////////////////////////-->
+        <div data-role="page" id="services" data-theme="a">
+            
+            <div data-role="content">
+            	<div>
+            		<h1>Services</h1>
+                    <p>Developing rich solutions takes hard work and passion. Here are some services that I can provide.</p>	
+                    
+                    <div class="ui-grid-a">
+                    	<div class="ui-block-a">
+                    		<h2>Web Development</h2>
+                        	<p>I offer rich web development solutions that can help bring your business to more markets online. </p>
+                    	</div>
+                    	
+                    	<div class="ui-block-b">
+                    		<h2>Application Development</h2>
+                        	<p>I also offer Application development services that can help make your business more efficient interally.</p>
+                    	</div>
+                    	
+                    </div>
+                    
+            	</div>
+            </div>
+            
+            <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#home" data-transition="pop" data-theme="" data-icon="home" >
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#aboutme" data-transition="pop" data-theme="" data-icon="info">
+                                About Me
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#projects" data-transition="pop" data-theme="" data-icon="star">
+                                Projects
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-role="navbar" data-iconpos="left">
+                    <ul>
+                        <li>
+                            <a data-rel="back" data-transition="pop" data-theme="" data-icon="check" class="ui-btn-active ui-state-persist">
+                                Back
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contactme" data-transition="pop" data-theme="" data-icon="gear">
+                                Contact Me
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            
+             <div data-role="footer" data-theme="a">
+                <h3>Copyright &copy; 2013 - All Rights Reserved</h3>
+                
+            </div>    
+            
+            <div data-role="footer2" data-theme="a">
+            	
+            	<img src="img/LogoMobile.jpg"  />
+            </div>
+        </div
+        
+        <!-- Contact Me
+        	//////////////////////////////////////////////////
+        	//////////////////////////////////////////////////
+        	//////////////////////////////////////////////////
+        	//////////////////////////////////////////////////-->
+        <div data-role="page" id="contactme" data-theme="a">
+            
+            <div data-role="content">
+            	<div>
+            		<h1>Contact Me</h1>
+            		<p>Trevor Hebert</p>
+            		<p>8 Lampman Crescent</p>
+            		<p>t.hebert73@gmail.com</p>
+            		<p>905-941-4655</p>
+            	
+            	</div>
+            </div>
+            
+            <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#home" data-transition="pop" data-theme="" data-icon="home" >
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#aboutme" data-transition="pop" data-theme="" data-icon="info">
+                                About Me
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#projects" data-transition="pop" data-theme="" data-icon="star">
+                                Projects
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-role="navbar" data-iconpos="left">
+                    <ul>
+                        <li>
+                            <a href="#services" data-transition="pop" data-theme="" data-icon="check">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a data-rel="back" data-transition="pop" data-theme="" data-icon="gear" class="ui-btn-active ui-state-persist">
+                                Back
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            
+             <div data-role="footer" data-theme="a">
+                <h3>Copyright &copy; 2013 - All Rights Reserved</h3>
+                
+            </div>    
+            
+            <div data-role="footer2" data-theme="a">
+            	
+            	<img src="img/LogoMobile.jpg"  />
+            </div>
+        </div
+        
+        
+		
+    </body>
+</html>
