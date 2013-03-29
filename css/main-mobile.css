@@ -54,3 +54,16 @@ img{
 	font-style:italic;
 
 }
+
+/*login page ===========*/
+
+/* error style */
+.error-message {
+	color:red;
+}
+
+
+/* business contact page =========== */
+.business-contact-list {
+	list-style-type:none;
+}

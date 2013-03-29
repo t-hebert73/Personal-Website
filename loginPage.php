@@ -1,10 +1,48 @@
+<?php
+/*
+ * File Name: loginPage.php
+ * Author: Trevor Hebert
+ * Last Edited: March 29, 2013
+ * 
+ * This is the login page where you can log in to go to the business contacts list.
+ * 
+ */
+	include "databaseConnect.php"; //this file connects to the database
+	//start the session
+	session_start();
+	
+	//grab the username and password that was entered
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+	
+	
+	if(isset($_POST) && isset($_POST["user_login"])){
+		//set the current user data row 
+		$user_data_row = null;
+		//create the query to check if the user exists with the entered username and password
+		$user_query = "SELECT * FROM admin WHERE userName='".$username."' AND password='".$password."'";
+		//hold the results of the query
+		$result = mysql_query($user_query);
+		//holds the users data
+		$user_data_row = mysql_fetch_assoc($result);
+		
+		if(is_array($user_data_row)){
+			//puts the username in a user_name session variable
+			$_SESSION['user_name'] = $user_data_row['userName'];
+			//congrats on logging in; redirect to the business contacts page
+			header("Location:business_contacts.php");
+		
+		}else{
+			//set the error message in the session variable
+			$_SESSION['error_message'] = "You must enter in a valid username and password.";		
+		}
+
+	} 
+
+?>
+
 <!DOCTYPE html>
-<!--
-Filename: index.html
-Author name: Trevor Hebert
-Website name: Trevor's Personal Portfolio
-File description: The contact me page.
--->
+
 
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -13,7 +51,7 @@ File description: The contact me page.
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Trevor's Personal Portfolio - Contact Me</title>
+        <title>Trevor's Personal Portfolio - Login </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
@@ -22,7 +60,7 @@ File description: The contact me page.
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body id="contact-me">
+    <body id="login">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
@@ -46,17 +84,32 @@ File description: The contact me page.
         <div class="main-container">
             <div class="main wrapper clearfix">
 
-                <article>
-                    <header>
-                        <h1>Contact Me</h1>
-                        <p> Trevor Hebert</p>
-                        <p> 8 Lampman Crescent - Thorold, Ontario</p>
-                        <p> T.hebert73@gmail.com</p>
-                        <p> 905-941-4655</p>
-                    </header>
+                <article style="margin-top:30px;">
                     
-                    <p><a href="loginPage.php"><button>View Business Contacts</button></a>
-                    	</p>
+                    
+                    <?php 
+                    	//check if there is an error set
+                    	if(isset($_SESSION['error_message'])){
+                    		//display the error
+                    		?> <!--popup an alert dialog--><script>alert("<?php echo $_SESSION['error_message'] ?>");</script><?php
+                    		echo "<p class='error-message'>".$_SESSION['error_message']."</p>";
+							unset($_SESSION['error_message']); //unset the session variable
+                    	}
+                    
+                    ?>
+                    
+                    <div>
+                    	<!-- shows the login form -->
+                    	<form action="" method="post">
+							<table>
+								<tr><td><label for="username">Username :</label></td><td><input id="username" type="text" name="username"></td></tr>
+								<tr><td><label for="password">Password :</label></td><td><input id="password" type="password" name="password"></td></tr>
+								<tr><td><input type="submit" value="Login" name="user_login"></td></tr>
+							</table>
+						</form>
+                    	
+                    	
+                    	</div>
                     
                 </article>
 

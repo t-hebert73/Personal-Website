@@ -8,12 +8,13 @@
    ========================================================================== */
 
 html,
-button,
-input,
+
 select,
 textarea {
     color: white;
 }
+
+
 
 body {
     font-size: 1em;
@@ -70,6 +71,24 @@ textarea {
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
+}
+
+.information-list a{
+	color:white;
+	text-decoration:none;
+
+}
+
+/*login page ===========*/
+
+/* error style */
+.error-message {
+	color:red;
+}
+
+/* business contact page =========== */
+.business-contact-list {
+	list-style-type:none;
 }
 
 
